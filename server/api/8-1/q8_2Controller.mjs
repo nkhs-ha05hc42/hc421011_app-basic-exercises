@@ -5,7 +5,7 @@ const get812 = (req, res) => {
             code: req.query.code,
             postcode : req.query.postcode,
             address : req.query.address,
-            status: "success",
+            status: "ok",
         }),
     )
 }
