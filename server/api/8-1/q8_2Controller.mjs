@@ -1,4 +1,4 @@
-const get812 = (req, res) => {
+const post812 = (req, res) => {
     console.log(req.body)
     res.send(
         JSON.stringify({
@@ -14,5 +14,5 @@ const get812 = (req, res) => {
 
 
 export const q8_2Controller = {
-    get812,
+    post812,
 }
