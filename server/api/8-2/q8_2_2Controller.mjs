@@ -3,7 +3,7 @@ const post822 = (req, res) => {
         res.send(
             JSON.stringify({
                 status : "error",
-                code : req.query.code,
+                code : req.body.code,
                 cause : "code already exists!",  
             }),
         )
