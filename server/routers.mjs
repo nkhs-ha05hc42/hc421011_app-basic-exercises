@@ -10,6 +10,7 @@ import { q8_2_1Controller } from "./api/controllers.mjs"
 import { q8_2_2Controller } from "./api/controllers.mjs"
 import { q8_2_3Controller } from "./api/controllers.mjs"
 import { q8_2_4Controller } from "./api/controllers.mjs"
+import { q8_3_1Controller } from "./api/controllers.mjs"
 
 const routers = express.Router()
 
@@ -38,6 +39,8 @@ routers.post("/api/8-2",q8_2_2Controller.post822)
 routers.put("/api/8-2",q8_2_3Controller.put823)
 
 routers.delete("/api/8-2",q8_2_4Controller.delete824)
+
+routers.get("/api/8-3",q8_3_1Controller.get831)
 
 // client配下は、ブラウザサイドで実行されるファイル（HTML/JS/CSS/画像など）を配置する
 routers.use(express.static(`${path.resolve()}/client`))
