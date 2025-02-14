@@ -14,6 +14,10 @@ import { q8_3_1Controller } from "./api/controllers.mjs"
 import { q8_3_2Controller } from "./api/controllers.mjs"
 import { sample2Controller } from "./api/controllers.mjs"
 import { q9_7_1Controller } from "./api/controllers.mjs"
+import { q9_7_2Controller } from "./api/controllers.mjs"
+import { q9_7_3Controller } from "./api/controllers.mjs"
+import { q9_7_4Controller } from "./api/controllers.mjs"
+import { q9_7_5Controller } from "./api/controllers.mjs"
 
 
 
@@ -54,6 +58,7 @@ routers.get("/api/8-3",q8_3_2Controller.get832)
 routers.post("/api/sample2",sample2Controller.postSample2) 
 
 routers.get("/api/sample2/:id",sample2Controller.getAllSample2)
+
 routers.get("/api/sample2",sample2Controller.getAllSample2)
 
 routers.put("/api/sample2/:id",sample2Controller.putSample2)
@@ -61,6 +66,14 @@ routers.put("/api/sample2/:id",sample2Controller.putSample2)
 routers.delete("/api/sample2/:id",sample2Controller.deleteSample2)
 
 routers.get("/api/9-7",q9_7_1Controller.getAll971)
+
+routers.get("/api/9-7/:id",q9_7_2Controller.getOne972)
+
+routers.post("/api/9-7",q9_7_3Controller.postOne973)
+
+routers.put("/api/9-7/:id",q9_7_4Controller.putOne974)
+
+routers.delete("/api/9-7/:id",q9_7_5Controller.deleteOne)
 
 // client配下は、ブラウザサイドで実行されるファイル（HTML/JS/CSS/画像など）を配置する
 routers.use(express.static(`${path.resolve()}/client`))

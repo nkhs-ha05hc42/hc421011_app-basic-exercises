@@ -11,3 +11,8 @@ export * from "./8-3/q8_3_1Controller.mjs"
 export * from "./8-3/q8_3_2Controller.mjs"
 export * from "./sample2/controller.mjs"
 export * from "./9-7/q9_7_1controller.mjs"
+export * from "./9-7/q9_7_2controller.mjs"
+export * from "./9-7/q9_7_3controller.mjs"
+export * from "./9-7/q9_7_4controller.mjs"
+export * from "./9-7/q9_7_5controller.mjs"
+

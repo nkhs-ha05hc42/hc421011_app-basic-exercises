@@ -11,8 +11,6 @@ const selectAll971 = async () => {
     return results.rows 
 }  
 
-
-
 export const q971Model = {
-    selectAll971,
+    selectAll971
 }
